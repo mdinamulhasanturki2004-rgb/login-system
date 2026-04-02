@@ -64,7 +64,7 @@ function logout(){
 
 
 <div class="notes-box">
-    <h2>Your Notes</h2>
+    console.log("js loaded");
 
     <input type="text" id="noteInput" placeholder="Write something...">
 
