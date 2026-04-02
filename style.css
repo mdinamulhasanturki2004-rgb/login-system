@@ -103,3 +103,65 @@ a:hover{
     bottom:10%;
     right:10%;
 }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard">
+
+<div class="glass-box">
+
+<h2 id="welcomeUser"></h2>
+
+<div class="cards">
+
+<div class="card">👤 Profile</div>
+<div class="card">📝 Notes</div>
+<div class="card">⚙ Settings</div>
+
+</div>
+
+<button onclick="logout()" class="logout">
+Logout
+</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+.notes-box{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.notes-box input{
+    padding:10px;
+    width:70%;
+    border:none;
+    border-radius:8px;
+}
+
+.notes-box button{
+    padding:10px 15px;
+    margin-left:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.notes-box li{
+    margin-top:10px;
+    list-style:none;
+}
+
+

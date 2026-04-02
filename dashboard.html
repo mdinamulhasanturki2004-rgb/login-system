@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div class="box">
-    <h2>Dashboard</h2>
+<body class="dashboard">
 
-<h3 id="welcomeUser"></h3>
+<div class="glass-box">
 
-<p>You are successfully logged in 🎉</p>
+<h2 id="welcomeUser"></h2>
+<div class="notes-box">
+    <h2>Your Notes</h2>
 
-<button onclick="logout()">Logout</button></div>
+    <input type="text" id="noteInput" placeholder="Write something...">
+
+    <button onclick="addNote()">Add Note</button>
+
+    <ul id="notesList"></ul>
+</div>
+
+
+<div class="cards">
+
+<div class="card">👤 Profile</div>
+<div class="card">📝 Notes</div>
+<div class="card">⚙ Settings</div>
+
+</div>
+
+<button onclick="logout()" class="logout">
+Logout
+</button>
+
+</div>
 
 <script src="script.js"></script>
 </body>

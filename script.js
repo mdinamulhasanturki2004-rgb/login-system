@@ -60,3 +60,15 @@ function logout(){
     localStorage.removeItem("loggedInUser");
     window.location.href = "index.html";
 }
+
+
+
+<div class="notes-box">
+    <h2>Your Notes</h2>
+
+    <input type="text" id="noteInput" placeholder="Write something...">
+
+    <button onclick="addNote()">Add Note</button>
+
+    <ul id="notesList"></ul>
+</div>
