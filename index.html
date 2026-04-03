@@ -19,5 +19,33 @@
 </div>
 
 <script src="script.js"></script>
+<script>
+if(localStorage.getItem("loggedInUser")){
+    window.location.href="dashboard.html";
+}
+</script>
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyACgY9VWCQefD5d-DqEyc-Zk2KVS_T0A7s",
+    authDomain: "my-login-app-be591.firebaseapp.com",
+    projectId: "my-login-app-be591",
+    storageBucket: "my-login-app-be591.firebasestorage.app",
+    messagingSenderId: "343836256033",
+    appId: "1:343836256033:web:741f88cc65116319b24060"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
+

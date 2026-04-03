@@ -6,8 +6,18 @@
 </head>
 
 <body class="dashboard">
-
+<button class="theme-toggle" onclick="toggletheme()"> dark mode</button>
 <div class="glass-box">
+<div class="profile-card">
+
+    <img id="profilePic" src="https://i.pravatar.cc/150?img=3">
+
+    <h3 id="profileName"></h3>
+
+    <input type="file" id="uploadPic" onchange="uploadProfilePic()">
+
+</div>
+
 
 <h2 id="welcomeUser"></h2>
 <div class="notes-box">
@@ -24,6 +34,16 @@
 <div class="cards">
 
 <div class="card">👤 Profile</div>
+
+<div class="stats">
+
+    <div class="card">📝 Notes<br><span id="noteCount">0</span></div>
+
+    <div class="card">👤 User<br><span id="userNameCard"></span></div>
+
+    <div class="card">🔥 Status<br>Active</div>
+
+</div>
 <div class="card">📝 Notes</div>
 <div class="card">⚙ Settings</div>
 
