@@ -170,11 +170,11 @@ function uploadProfilePic(){
         localStorage.setItem(loggedUser+"_profilePic", reader.result);
 
         document.getElementById("profilePic").src = reader.result;
-    }
+    };
     if(file){
     reader.readAsDataURL(file);
+    }
 }
-
 
 // load saved profile pic
 (function(){
