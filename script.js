@@ -171,7 +171,7 @@ function uploadProfilePic(){
 
         document.getElementById("profilePic").src = reader.result;
     }
-
+    if(file){
     reader.readAsDataURL(file);
 }
 
@@ -188,19 +188,3 @@ function uploadProfilePic(){
 })();
 
 
-
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin:20px;
-}
-
-.card{
-    padding:20px;
-    width:150px;
-    text-align:center;
-    border-radius:15px;
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(15px);
-}
